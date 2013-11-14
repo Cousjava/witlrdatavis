@@ -1,10 +1,5 @@
-T,15-Mar-13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-JH,Employer Perspectives 2012,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-TI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 TID,Table 31/ 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-TI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 VT,C8 - Position or role last young person was recruited to,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 BT,Base: All who have recruited young people,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 COL1,,,Country,,,,6 Sector grouping,,,,,,Establishment size,,,,,Type of site,,,SME,,Organisation type,,,Length of time operating,,,,Vacancies in last 12 months,Recruited in last 12 months,Work experience,,Training,,,,,Vocational Qualifications,,Apprenticeships,,Formal Apprenticeships,,Investors in People,,Business outlook - next 12 months,,,Largest staff group,,,,Vacancies/Recruitment,Training and Planning,,,,Young Growth Businesses,
 COL,,Total,England,Northern Ireland,Scotland,Wales,Primary sector and utilities,Manufacturing,Construction,"Trade, accommodation and transport",Business and other services,Non-market services,2 to 4,5 to 9,10 to 24,25 to 99,100+,Single site,Multisite (head office),Multisite (not HO),Non-SME,SME,For profit,Charity,Government,Under 1 year,1 to 3 years,Over 3 to 5 years,Over 5 years,Yes,Yes,Yes - any,No,Internal training only,External training only,Int and ext training,YES - ANY TRAINING, NO TRAINING,Yes,No,Currently have / offer,Don't have / offer,Formal,Did not offer / informal,Accredited,Not accredited,Grow,Contract,Remain the same,Professional / managers,Other 'white collar' staff,Skilled manual staff,Other manual staff,Recruited in last 12 months,Plan and train,Plan but dont train,Don't plan but do train,Dont plan and dont train,Young Growth Business,Other Business
@@ -30,4 +25,3 @@ PRC,Elementary staff,93457,78039,2385,8509,4524,*6996,4429,4471,*58748,*14703,*4
 RTV,,20%,20%,20%,20%,23%,44%,20%,18%,32%,11%,5%,19%,19%,23%,21%,15%,24%,12%,17%,16%,22%,22%,14%,8%,34%,29%,25%,19%,20%,20%,14%,24%,23%,24%,17%,19%,29%,17%,22%,16%,22%,15%,22%,16%,23%,21%,30%,22%,14%,7%,18%,39%,20%,18%,31%,33%,24%,26%,20%
 PRC,Don't know,19508,15767,547,*2426,768,1044,*1830,1413,*5011,6812,3398,4573,3880,4265,3752,*3037,10553,2931,*6024,5528,13733,16174,1472,*1650,728,1259,620,16727,19508,19508,*8921,*10396,*4325,1061,*13574,*18960,*548,*10022,8433,*9708,*9458,*8958,*10549,5157,12905,9715,*1777,4445,3793,3624,*9183,*2907,19508,*17966,*548,994,0,422,19086
 RTV,,4%,4%,5%,6%,4%,7%,8%,6%,3%,5%,4%,4%,4%,4%,4%,10%,5%,5%,3%,4%,5%,4%,4%,6%,5%,3%,2%,4%,4%,4%,5%,4%,3%,3%,5%,5%,1%,5%,4%,8%,3%,8%,3%,5%,5%,4%,8%,4%,4%,4%,5%,3%,4%,5%,2%,3%,0%,4%,4%
-JF,Research conducted by IFF Research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

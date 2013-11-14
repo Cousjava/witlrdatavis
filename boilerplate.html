@@ -58,16 +58,20 @@
   </script>
 </section>
 
-<section class="slide">
-	<h1>Content</h1>
-</section>
-
-<section class="slide">
-	<h1>Here</h1>
+<section class="slide" id="report">
+  <div id="report_content">
+  </div>
+  
+  <script type="text/javascript">
+    $(document).bind('deck.change', function (event, from, to) {
+      if ($.deck('getSlide', to)[0].id == 'report') {
+        $('#report_content').text("Age: " + Viz.data.age);
+      }
+    });
+  </script>
 </section>
 
 <!-- End slides. -->
-
 
 <!-- Begin extension snippets. Add or remove as needed. -->
 
