@@ -19,20 +19,43 @@
 	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
 
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
-	<link rel="stylesheet" href="themes/style/web-2.0.css">
+	<!-- <link rel="stylesheet" href="themes/style/web-2.0.css"> -->
 	
 	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
 	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
 	
 	<!-- Required Modernizr file -->
 	<script src="modernizr.custom.js"></script>
+  <!-- Required JS files. -->
+  <script src="jquery-1.7.2.min.js"></script>
+  <script src="core/deck.core.js"></script>
+  
+  <!-- Extension JS files. Add or remove as needed. -->
+  <script src="core/deck.core.js"></script>
+  <script src="extensions/hash/deck.hash.js"></script>
+  <script src="extensions/menu/deck.menu.js"></script>
+  <script src="extensions/goto/deck.goto.js"></script>
+  <script src="extensions/status/deck.status.js"></script>
+  <script src="extensions/navigation/deck.navigation.js"></script>
+  <script src="extensions/scale/deck.scale.js"></script>
+  
+  <script src="viz.js"></script>
 </head>
 <body class="deck-container">
 
 <!-- Begin slides. Just make elements with a class of slide. -->
 
-<section class="slide">
-	<h1>Slide</h1>
+<section class="slide" id="qn_age">
+	<h1>What is your age?</h1>
+  <fieldset id="ages">
+    <button value="16-18">16-18</button>
+    <button value="19-21">19-21</button>
+    <button value="22-25">22-25</button>
+  </fieldset>
+  
+  <script type="text/javascript">
+    Viz.buttonSelect("age", "ages");
+  </script>
 </section>
 
 <section class="slide">
@@ -55,7 +78,6 @@
 <!-- deck.status snippet -->
 <p class="deck-status">
 	<span class="deck-status-current"></span>
-	/
 	<span class="deck-status-total"></span>
 </p>
 
@@ -74,21 +96,7 @@
 <a href="#" class="deck-next-link" title="Next">&#8594;</a>
 
 <!-- End extension snippets. -->
-
-
-<!-- Required JS files. -->
-<script src="jquery-1.7.2.min.js"></script>
-<script src="core/deck.core.js"></script>
-
-<!-- Extension JS files. Add or remove as needed. -->
-<script src="core/deck.core.js"></script>
-<script src="extensions/hash/deck.hash.js"></script>
-<script src="extensions/menu/deck.menu.js"></script>
-<script src="extensions/goto/deck.goto.js"></script>
-<script src="extensions/status/deck.status.js"></script>
-<script src="extensions/navigation/deck.navigation.js"></script>
-<script src="extensions/scale/deck.scale.js"></script>
-
+  
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
 	$(function() {
