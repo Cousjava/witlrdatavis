@@ -39,6 +39,7 @@
   <script src="extensions/navigation/deck.navigation.js"></script>
   <script src="extensions/scale/deck.scale.js"></script>
   
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <script src="viz.js"></script>
 </head>
 <body class="deck-container">
@@ -46,16 +47,18 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide" id="qn_age">
-	<h1>What is your age?</h1>
-  <fieldset id="ages">
-    <button value="16-18">16-18</button>
-    <button value="19-21">19-21</button>
-    <button value="22-25">22-25</button>
-  </fieldset>
-  
-  <script type="text/javascript">
-    Viz.buttonSelect("age", "ages");
-  </script>
+  <div class="row">
+    <strong class="row">What is your age?</strong>
+    <fieldset id="ages" class="btn-group row">
+      <button class="btn btn-default col-md-4" value="16-18">16-18</button>
+      <button class="btn btn-default col-md-4" value="19-21">19-21</button>
+      <button class="btn btn-default col-md-4" value="22-25">22-25</button>
+    </fieldset>
+    
+    <script type="text/javascript">
+      Viz.buttonSelect("age", "ages");
+    </script>
+  </div>
 </section>
 
 <section class="slide" id="report">
@@ -63,10 +66,8 @@
   </div>
   
   <script type="text/javascript">
-    $(document).bind('deck.change', function (event, from, to) {
-      if ($.deck('getSlide', to)[0].id == 'report') {
-        $('#report_content').text("Age: " + Viz.data.age);
-      }
+    Viz.onSlide("report", function() {
+      $('#report_content').html('Age: ' + Viz.data.age);
     });
   </script>
 </section>
