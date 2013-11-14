@@ -80,7 +80,33 @@
     </script>
   </div>
 </section>
-  
+ 
+<section class="slide" id="qn_sector">
+    <div class="container">
+		<h1 class="row text-center">What sector are you interested in?</h1>
+      <br />
+      <br />
+    
+		<fieldset id="sectors_row1" class="btn-group row col-xs-12">
+      <button class="btn btn-default btn-lg col-xs-3" value="scotland">Scotland</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="england">England</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="northenireland">Northen Ireland</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="wales">Wales</button>
+    </fieldset>
+		<fieldset id="sectors_row2" class="btn-group row col-xs-12">
+      <button class="btn btn-default btn-lg col-xs-3" value="scotland">Scotland</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="england">England</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="northenireland">Northen Ireland</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="wales">Wales</button>
+    </fieldset>
+    
+    <script type="text/javascript">
+      Viz.buttonSelect("sector", "sectors_row1");
+			Viz.buttonSelect("sector", "sectors_row2");
+    </script>
+  </div>
+</section> 
+
 <section class="slide" id="report">
   <div id="report_content">
   </div>

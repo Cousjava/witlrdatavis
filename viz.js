@@ -27,4 +27,9 @@ $(function () {
 	  mask.style.fill = 'rgba(255, 255, 255, 0.6)';
 	  document.getElementById(elId).appendChild(mask);
   };
+	
+	Viz.blurSvgElement = function (svgId, id, newOpacity) {
+		var svgDoc = document.getElementById(svgId).getSVGDocument();
+		svgDoc.getElementById(id).style.opacity = newOpacity.toString();
+	};
 });
