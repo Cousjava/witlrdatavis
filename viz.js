@@ -30,6 +30,6 @@ $(function () {
 	
 	Viz.blurSvgElement = function (svgId, id, newOpacity) {
 		var svgDoc = document.getElementById(svgId).getSVGDocument();
-		svgDoc.getElementById(id).style.opacity = newOpacity.toString();
+		svgDoc.getElementById(id).style.opacity = newOpacity;
 	};
 });

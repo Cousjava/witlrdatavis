@@ -88,16 +88,15 @@
       <br />
     
 		<fieldset id="sectors_row1" class="btn-group row col-xs-12">
-      <button class="btn btn-default btn-lg col-xs-3" value="scotland">Scotland</button>
-      <button class="btn btn-default btn-lg col-xs-3" value="england">England</button>
-      <button class="btn btn-default btn-lg col-xs-3" value="northenireland">Northen Ireland</button>
-      <button class="btn btn-default btn-lg col-xs-3" value="wales">Wales</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="primarySector">Primary Sector</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="manufacturing">Manufacturing</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="construction">Construction</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="trade">Trade</button>
     </fieldset>
 		<fieldset id="sectors_row2" class="btn-group row col-xs-12">
-      <button class="btn btn-default btn-lg col-xs-3" value="scotland">Scotland</button>
-      <button class="btn btn-default btn-lg col-xs-3" value="england">England</button>
-      <button class="btn btn-default btn-lg col-xs-3" value="northenireland">Northen Ireland</button>
-      <button class="btn btn-default btn-lg col-xs-3" value="wales">Wales</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="business">Business</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="nonMarket">Non-Market</button>
+      <button class="btn btn-default btn-lg col-xs-6" value="iDontCare">I don't care</button>
     </fieldset>
     
     <script type="text/javascript">
@@ -107,6 +106,60 @@
   </div>
 </section> 
 
+<section class="slide" id="qn_sizes">
+    <div class="container">
+		<h1 class="row text-center">How many people would you like to work with?</h1>
+      <br />
+      <br />
+    
+			<fieldset id="sizes" class="btn-group row col-xs-10">
+      <button class="btn btn-default btn-lg col-xs-2" value="2-4" width="20%">2-4</button>
+      <button class="btn btn-default btn-lg col-xs-2" value="5-9" width="20%">5-9</button>
+      <button class="btn btn-default btn-lg col-xs-2" value="10-24" width="20%">10-24</button>
+      <button class="btn btn-default btn-lg col-xs-2" value="25-99" width="20%">25-99</button>
+			<button class="btn btn-default btn-lg col-xs-2" value="100+" width="20%">100+</button>
+		</fieldset>
+    
+    <script type="text/javascript">
+      Viz.buttonSelect("size", "sizes");
+    </script>
+  </div>
+</section>
+
+<section class="slide" id="qn_business_type">
+	<div class="container">
+		<h1 class="row text-center">What type of business would you prefer to work in?</h1>
+      <br />
+      <br />
+    
+		<fieldset id="businessTypes" class="btn-group row col-xs-10">
+      <button class="btn btn-default btn-lg col-xs-2" value="forProfit">For-profit</button>
+      <button class="btn btn-default btn-lg col-xs-2" value="charity">Charity</button>
+		</fieldset>
+    
+    <script type="text/javascript">
+      Viz.buttonSelect("businessType", "businessTypes");
+    </script>
+  </div>
+</section>
+
+<section class="slide" id="qn_work_experience">
+	<div class="container">
+		<h1 class="row text-center">Do you have work experience?</h1>
+      <br />
+      <br />
+    
+		<fieldset id="workExperience" class="btn-group row col-xs-10">
+      <button class="btn btn-default btn-lg col-xs-2" value="yes">Yes</button>
+      <button class="btn btn-default btn-lg col-xs-2" value="no">No</button>
+		</fieldset>
+    
+    <script type="text/javascript">
+      Viz.buttonSelect("workExperience", "workExperiences");
+    </script>
+  </div>
+</section>	
+	
 <section class="slide" id="report">
   <div id="report_content">
   </div>
