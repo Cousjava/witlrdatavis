@@ -17,4 +17,14 @@ $(function () {
       }
     });
   };
+
+  Viz.maskSvg = function (id, percent) {
+	  var mask = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+	  mask.setAttribute('width', '100%');
+	  mask.setAttribute('height', (100 - percent).toString() + '%');
+	  mask.setAttribute('x', 0);
+	  mask.setAttribute('y', 0);
+	  mask.style.fill = 'rgba(255, 255, 255, 0.6)';
+	  document.getElementById(elId).appendChild(mask);
+  };
 });

@@ -47,12 +47,14 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide" id="qn_age">
-  <div class="row">
-    <strong class="row">What is your age?</strong>
-    <fieldset id="ages" class="btn-group row">
-      <button class="btn btn-default col-md-4" value="16-18">16-18</button>
-      <button class="btn btn-default col-md-4" value="19-21">19-21</button>
-      <button class="btn btn-default col-md-4" value="22-25">22-25</button>
+    <div class="container">
+    <h1 class="row text-center">What is your age?</h1>
+      <br />
+      <br />
+    <fieldset id="ages" class="btn-group row col-xs-12">
+      <button class="btn btn-default btn-lg col-xs-4" value="16-18">16-18</button>
+      <button class="btn btn-default btn-lg col-xs-4" value="19-21">19-21</button>
+      <button class="btn btn-default btn-lg col-xs-4" value="22-25">22-25</button>
     </fieldset>
     
     <script type="text/javascript">
@@ -61,6 +63,24 @@
   </div>
 </section>
 
+<section class="slide" id="qn_country">
+    <div class="container">
+    <h1 class="row text-center">Where do you live?</h1>
+      <br />
+      <br />
+    <fieldset id="countries" class="btn-group row col-xs-12">
+      <button class="btn btn-default btn-lg col-xs-3" value="scotland">Scotland</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="england">England</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="northenireland">Northen Ireland</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="wales">Wales</button>
+    </fieldset>
+    
+    <script type="text/javascript">
+      Viz.buttonSelect("country", "countries");
+    </script>
+  </div>
+</section>
+  
 <section class="slide" id="report">
   <div id="report_content">
   </div>
@@ -68,6 +88,7 @@
   <script type="text/javascript">
     Viz.onSlide("report", function() {
       $('#report_content').html('Age: ' + Viz.data.age);
+			
     });
   </script>
 </section>
@@ -77,8 +98,6 @@
 <!-- Begin extension snippets. Add or remove as needed. -->
 
 <!-- deck.navigation snippet -->
-<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
-<a href="#" class="deck-next-link" title="Next">&#8594;</a>
 
 <!-- deck.status snippet -->
 <p class="deck-status">
@@ -97,8 +116,7 @@
 <!-- deck.hash snippet -->
 <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
 
-<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
-<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
 
 <!-- End extension snippets. -->
   
