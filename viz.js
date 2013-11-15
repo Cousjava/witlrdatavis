@@ -11,7 +11,7 @@ var c7 = {
 };
 var c10 = {
 	columns: ["England","Northern Ireland","Scotland","Wales","Primary sector and utilities","Manufacturing","Construction","Trade, accommodation and transport","Business and other services","Non-market services","2 to 4","5 to 9","10 to 24","25 to 99","100+","For profit","Charity","Government","Yes - any","No"],
-	headings: ["Jobcentre Plus (GB), Jobcentre/Jobs and Benefits Office (NI)","Government programmes and schemes","NAS Apprenticeship Vacancy system","National newspapers","Local newspapers","Trade press / professional publications","Recruitment agencies","Paid for Recruitment websites","School / college / university job fairs or career services","Word of mouth / personal recommendation","Internal notices / filled it internally","Own website","Social media","Other free websites","Notice boards / shop windows","Speculative enquiries"],
+	rows: ["Jobcentre Plus (GB), Jobcentre/Jobs and Benefits Office (NI)","Government programmes and schemes","NAS Apprenticeship Vacancy system","National newspapers","Local newspapers","Trade press / professional publications","Recruitment agencies","Paid for Recruitment websites","School / college / university job fairs or career services","Word of mouth / personal recommendation","Internal notices / filled it internally","Own website","Social media","Other free websites","Notice boards / shop windows","Speculative enquiries"],
 	data: [
 		[14,25,20,21,20,14,16,15,12,23,12,15,15,20,13,15,24,13,15,16],
 		[2,4,5,7,4,2,2,1,2,6,3,2,2,3,2,2,5,12,4,1],
@@ -34,7 +34,7 @@ var c10 = {
 
 var c13 = {
 	columns: ["England","Northern Ireland","Scotland","Wales","Primary sector and utilities","Manufacturing","Construction","Trade, accommodation and transport","Business and other services","Non-market services","2 to 4","5 to 9","10 to 24","25 to 99","100+","For profit","Charity","Government","Yes - any","No"],
-	headings: ["Can be moulded into own way of doing things","Their enthusiasm","They are willing to learn","Easier to train","They bring new/fresh ideas","They are relatively inexpensive","More flexible with working hours","Social responsibility / give young people a chance","Secures future of the business","Good personal qualities (e.g. interpersonal skills, hard working, reliable)","Better with IT/technology","Younger people are healthier / fitter","They are available","Creates a more diverse workforce"],
+	row: ["Can be moulded into own way of doing things","Their enthusiasm","They are willing to learn","Easier to train","They bring new/fresh ideas","They are relatively inexpensive","More flexible with working hours","Social responsibility / give young people a chance","Secures future of the business","Good personal qualities (e.g. interpersonal skills, hard working, reliable)","Better with IT/technology","Younger people are healthier / fitter","They are available","Creates a more diverse workforce"],
 	data: [
 		[23,27,34,37,37,37,30,34,28,33,30,32,32,31,33,24,22,32,31,29],
 		[26,28,32,23,20,17,31,32,34,29,32,31,29,29,29,41,38,25,29,31],
@@ -63,7 +63,7 @@ var c6 = {
 	}
 var c5 = {
 	columns: ["England","Northern Ireland","Scotland","Wales","Primary sector and utilities","Manufacturing","Construction","Trade, accommodation and transport","Business and other services","Non-market services","2 to 4","5 to 9","10 to 24","25 to 99","100+","For profit","Charity","Government","Yes - any","No"],
-	headings: ["The level of achievement or academic qualification is critical","The level of achievement or academic qualification has little or no value"],
+	rows: ["The level of achievement or academic qualification is critical","The level of achievement or academic qualification has little or no value"],
 	data: [
 		[43,50,45,40,27,37,36,32,54,64,40,44,47,50,60,41,51,69,54,40],
 		[54,47,53,58,71,61,62,66,43,32,57,54,51,46,36,57,45,25,44,58]
@@ -168,9 +168,12 @@ Viz = {};
     });
   };
 	
-	Viz.makeSentence = function (currentKey, prevValue) {
-		var percent = Viz.funFacts[currentKey][prevValue];
+	Viz.makeSentence = function (currentKey, prevValue, prevId) {
+		var percent = Viz.funFacts[currentKey][Viz.data[currentKey]][prevValue];
 		var message = percent.toString() + "% of employers that offer apprenticeships currently has an apprentice like you, based on your last answer.";
+		var msgDiv = document.createElement('div');
+		msgDiv.innerHTML = message;
+		document.getElementById(prevId).parentNode.appendChild(msgDiv);
 	};
   
   Viz.onSlide = function (id, handler) {
