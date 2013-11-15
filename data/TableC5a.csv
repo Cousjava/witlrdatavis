@@ -3,3 +3,12 @@ C5a - Importance of factors looked for in candidates: Having a particular level 
 ,England,Northern Ireland,Scotland,Wales,Primary sector and utilities,Manufacturing,Construction,"Trade, accommodation and transport",Business and other services,Non-market services,2 to 4,5 to 9,10 to 24,25 to 99,100+,For profit,Charity,Government,Yes - any,No
 The level of achievement or academic qualification is critical,43,50,45,40,27,37,36,32,54,64,40,44,47,50,60,41,51,69,54,40
 The level of achievement or academic qualification has little or no value,54,47,53,58,71,61,62,66,43,32,57,54,51,46,36,57,45,25,44,58
+
+var c5 = {
+	columns: ["England","Northern Ireland","Scotland","Wales","Primary sector and utilities","Manufacturing","Construction","Trade, accommodation and transport","Business and other services","Non-market services","2 to 4","5 to 9","10 to 24","25 to 99","100+","For profit","Charity","Government","Yes - any","No"]
+	headings: ["The level of achievement or academic qualification is critical","The level of achievement or academic qualification has little or no value"]
+	data: [
+		[43,50,45,40,27,37,36,32,54,64,40,44,47,50,60,41,51,69,54,40],
+		[54,47,53,58,71,61,62,66,43,32,57,54,51,46,36,57,45,25,44,58]
+	]
+}

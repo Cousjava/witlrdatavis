@@ -161,8 +161,25 @@
 	
 <section class="slide" id="report">
   <div id="report_content">
+    
   </div>
-  
+  <div class="container">
+    <h1 class="row text-center">Please select a catagory to see data about.</h1>
+      <br />
+      <br />
+    
+		<fieldset id="results" class="btn-group row col-xs-12">
+      <button class="btn btn-default btn-lg col-xs-3" value="sector">Sector</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="country">Country</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="size">Establishment size</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="businessType">Organisation Type</button>
+		</fieldset>
+    <script type="text/javascript">
+      $('#report button').click(function() {
+        Viz.runSequence(this.value);
+      });
+    </script>
+  </div>
   <script type="text/javascript">
     Viz.onSlide("report", function() {
       $('#report_content').html('Age: ' + Viz.data.age);

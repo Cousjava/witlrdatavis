@@ -3,3 +3,12 @@ C6B - Whether recruited any young people in the last 12 months (aged 16-18 or 19
 ,England,Northern Ireland,Scotland,Wales,Primary sector and utilities,Manufacturing,Construction,"Trade, accommodation and transport",Business and other services,Non-market services,2 to 4,5 to 9,10 to 24,25 to 99,100+,For profit,Charity,Government,Yes - any,No
 16-18,24,19,26,24,19,21,19,35,18,17,17,21,27,31,42,26,14,15,27,23
 19-24,53,52,55,55,44,47,44,59,51,53,39,48,59,69,82,54,47,46,57,51
+
+var c6 = {
+	columns: [ "England","Northern Ireland","Scotland","Wales","Primary sector and utilities","Manufacturing","Construction","Trade, accommodation and transport","Business and other services","Non-market services","2 to 4","5 to 9","10 to 24","25 to 99","100+","For profit","Charity","Government"]
+	rows: ["Yes - any","No"]
+	data: [
+		[24,19,26,24,19,21,19,35,18,17,17,21,27,31,42,26,14,15,27,23],
+		[53,52,55,55,44,47,44,59,51,53,39,48,59,69,82,54,47,46,57,51]
+		]
+	}
