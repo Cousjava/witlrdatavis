@@ -214,19 +214,17 @@ Viz = {};
       console.log(Viz.getTop(c10,Viz.data[catagory]));
     }
   }
-  Viz.lookup = function (heading, catagory) {
-    
-  }
+
   Viz.getTop = function (data, catagory) {
     var j = data.columns.indexOf(catagory);
     var maxVal = 0;
     var maxIndex = 0;
     for (var i = 0; i < data.data.length; i++) {
-      if (data.data[i] > maxVal) {
+      if (data.data[j][i] > maxVal) {
         maxIndex = i;
-        maxVal = data.data[i];
+        maxVal = data.data[j][i];
       }
     }
-    return data.rows[i]
+    return data.rows[maxIndex];
   }
 
