@@ -34,7 +34,7 @@ var c10 = {
 
 var c13 = {
 	columns: ["England","Northern Ireland","Scotland","Wales","Primary sector and utilities","Manufacturing","Construction","Trade, accommodation and transport","Business and other services","Non-market services","2 to 4","5 to 9","10 to 24","25 to 99","100+","For profit","Charity","Government","Yes - any","No"],
-	row: ["Can be moulded into own way of doing things","Their enthusiasm","They are willing to learn","Easier to train","They bring new/fresh ideas","They are relatively inexpensive","More flexible with working hours","Social responsibility / give young people a chance","Secures future of the business","Good personal qualities (e.g. interpersonal skills, hard working, reliable)","Better with IT/technology","Younger people are healthier / fitter","They are available","Creates a more diverse workforce"],
+	rows: ["Can be moulded into own way of doing things","Their enthusiasm","They are willing to learn","Easier to train","They bring new/fresh ideas","They are relatively inexpensive","More flexible with working hours","Social responsibility / give young people a chance","Secures future of the business","Good personal qualities (e.g. interpersonal skills, hard working, reliable)","Better with IT/technology","Younger people are healthier / fitter","They are available","Creates a more diverse workforce"],
 	data: [
 		[23,27,34,37,37,37,30,34,28,33,30,32,32,31,33,24,22,32,31,29],
 		[26,28,32,23,20,17,31,32,34,29,32,31,29,29,29,41,38,25,29,31],
@@ -160,8 +160,9 @@ Viz = {};
 			}
 		}
 	};
-  
+  var counter = 0;
   Viz.buttonSelect = function (name, id) {
+    if (counter++ > 6) return;
     $('#' + id + ' button').click(function() {
       Viz.data[name] = this.value;
       $.deck('next');

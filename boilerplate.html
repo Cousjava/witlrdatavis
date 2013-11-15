@@ -57,7 +57,9 @@
     </fieldset>
     
     <script type="text/javascript">
+      $(function(){
       Viz.buttonSelect("age", "ages");
+      })
     </script>
   </div>
 </section>
@@ -75,10 +77,9 @@
     </fieldset>
     
     <script type="text/javascript">
+      $(function(){
       Viz.buttonSelect("country", "countries");
-			Viz.onSlide("qn_country", function () {
-				Viz.makeSentence("country", Viz.data.age, "countries");
-			});
+      })
     </script>
   </div>
 </section>
@@ -102,8 +103,10 @@
     </fieldset>
     
     <script type="text/javascript">
+      $(function(){
       Viz.buttonSelect("sector", "sectors_row1");
 			Viz.buttonSelect("sector", "sectors_row2");
+      })
     </script>
   </div>
 </section> 
@@ -123,7 +126,9 @@
 		</fieldset>
     
     <script type="text/javascript">
+      $(function(){
       Viz.buttonSelect("size", "sizes");
+      })
     </script>
   </div>
 </section>
@@ -134,14 +139,15 @@
       <br />
       <br />
     
-		<fieldset id="businessTypes" class="btn-group row col-xs-12">
-      <button class="btn btn-default btn-lg col-xs-4" value="forProfit">For-profit</button>
-      <button class="btn btn-default btn-lg col-xs-4" value="charity">Charity</button>
-			<button class="btn btn-default btn-lg col-xs-4" value="government">Government</button>
+		<fieldset id="businessTypes" class="btn-group row col-xs-10">
+      <button class="btn btn-default btn-lg col-xs-2" value="forProfit">For-profit</button>
+      <button class="btn btn-default btn-lg col-xs-2" value="charity">Charity</button>
 		</fieldset>
     
     <script type="text/javascript">
+      $(function(){
       Viz.buttonSelect("businessType", "businessTypes");
+      });
     </script>
   </div>
 </section>
@@ -158,19 +164,42 @@
 		</fieldset>
     
     <script type="text/javascript">
+      $(function(){
       Viz.buttonSelect("workExperience", "workExperiences");
+      })
     </script>
   </div>
 </section>	
 	
 <section class="slide" id="report">
   <div id="report_content">
+    
   </div>
-  
+  <div class="container">
+    <h1 class="row text-center">Please select a catagory to see data about.</h1>
+      <br />
+      <br />
+    
+		<fieldset id="results" class="btn-group row col-xs-12">
+      <button class="btn btn-default btn-lg col-xs-3" value="sector">Sector</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="country">Country</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="size">Establishment size</button>
+      <button class="btn btn-default btn-lg col-xs-3" value="businessType">Organisation Type</button>
+		</fieldset>
+    <script type="text/javascript">
+      $(function(){
+      $('#report button').click(function() {
+        Viz.runSequence(this.value);
+      });
+      })
+    </script>
+  </div>
   <script type="text/javascript">
+    $(function(){
     Viz.onSlide("report", function() {
       $('#report_content').html('Age: ' + Viz.data.age);
     });
+      })
   </script>
 </section>
 

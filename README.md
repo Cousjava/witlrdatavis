@@ -1,4 +1,4 @@
-This is Team 5's entry for the 2012 witlr St Andrews Hackathon
+This is Team 5's entry for the 2013 witlr St Andrews Hackathon
 
 
 The MIT License
