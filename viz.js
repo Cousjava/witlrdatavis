@@ -169,11 +169,11 @@ Viz = {};
   };
 	
 	Viz.makeSentence = function (currentKey, prevValue, prevId) {
-		var percent = Viz.funFacts[currentKey][Viz.data[currentKey]][prevValue];
+		/*var percent = Viz.funFacts[currentKey][Viz.data[prevId]][prevValue];
 		var message = percent.toString() + "% of employers that offer apprenticeships currently has an apprentice like you, based on your last answer.";
 		var msgDiv = document.createElement('div');
 		msgDiv.innerHTML = message;
-		document.getElementById(prevId).parentNode.appendChild(msgDiv);
+		document.getElementById(prevId).parentNode.appendChild(msgDiv);*/
 	};
   
   Viz.onSlide = function (id, handler) {
